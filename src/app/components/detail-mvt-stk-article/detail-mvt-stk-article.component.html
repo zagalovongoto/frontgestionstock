@@ -1,0 +1,78 @@
+<div class="row custum-border mr-0 ml-0 mb-1 mt-1">
+    <div class="col-md-1 custom-border-right p-1 text-cente">
+        <img src="assets/food.png" width="48px" height="48px" alt="">
+    </div>
+
+    <div class="col-md-5 custom-border-right mb-1 mt-1">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2 blue-color"><i class="fas fa-info-circle"></i></div>
+                    <div class="col-md-9">code article</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 blue-color"><i class="fas fa-info-circle"></i></div>
+                    <div class="col-md-9">désignation</div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2 blue-color"><i class="fas fa-dollar-sign"></i></div>
+                    <div class="col-md-9">prix ttc</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2 blue-color"><i class="fas fa-dollar-sign"></i></div>
+                    <div class="col-md-9">prix ht</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 custom-border-right mb-1 mt-1">
+        <div class="row">
+            <div class="col-md-12">Stock actuel</div>
+            <div class="col-md-12">139</div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-1 mt-1">
+        <div class="row">
+            <div class="col-md-12 text-center ">
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal"><i class="fab fa-stack-overflow"></i>&nbsp; Correction de stock</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Correction de stock</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Recipient:</label>
+              <input type="text" class="form-control" placeholder="Quantité">
+            </div>
+            <div class="form-group">
+              <select name="" id="" class="form-control ">
+                <option value="">Correction positive</option>
+                <option value="">Correction négative</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-ban"></i> Annuler</button>
+          <button type="button" class="btn btn-primary"><i class="fas fa-save"></i> Enregistrer</button>
+        </div>
+      </div>
+    </div>
+  </div>

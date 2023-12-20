@@ -1,0 +1,39 @@
+<div class="main-container">
+    <div class="row min-height-600 no-flex-wrap">
+        <div class="card col-md-2 mr-2">
+            <div class="col pl-0 pr-0">
+                <div class="card mt-3 mb-3 border-none text-center">
+                    <h4>Gestion de stock V2.0</h4>
+                    <small class="form-text text-muted ">
+                        By Agbeti Mambey
+                    </small>
+                </div>
+
+                <!--menu-->
+                <div>
+                    <app-menu></app-menu>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-md-10 pl-0 pr-0 background-grey border-none">
+            <div class="col pl-0 pr-0 d-flex flex-column justify-content-lg-start ">
+                <!--entête-->
+                <div class="card p-4 min-height-80 mb-2">
+                    <app-header></app-header>
+                </div>
+
+                <!--contenu-->
+                <div class="card mb-2" style="min-height: 480px;">
+                    <router-outlet></router-outlet>
+                </div>
+
+                <!--footer-->
+                <div class="card min-height-80">
+                    footer
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
