@@ -21,6 +21,8 @@ import { Observable }                                        from 'rxjs';
 // @ts-ignore
 import { EntrepriseDto } from '../model/entrepriseDto';
 // @ts-ignore
+import { ErrorDto } from '../model/errorDto';
+// @ts-ignore
 import { SaveVente400Response } from '../model/saveVente400Response';
 
 // @ts-ignore
@@ -98,10 +100,10 @@ export class EntrepriseApiService {
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
-    public deleteEntreprise(idEntreprises: number, observe?: 'body', reportProgress?: boolean, options?: {httpHeaderAccept?: '*/*', context?: HttpContext}): Observable<any>;
-    public deleteEntreprise(idEntreprises: number, observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: '*/*', context?: HttpContext}): Observable<HttpResponse<any>>;
-    public deleteEntreprise(idEntreprises: number, observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: '*/*', context?: HttpContext}): Observable<HttpEvent<any>>;
-    public deleteEntreprise(idEntreprises: number, observe: any = 'body', reportProgress: boolean = false, options?: {httpHeaderAccept?: '*/*', context?: HttpContext}): Observable<any> {
+    public deleteEntreprise(idEntreprises: number, observe?: 'body', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json' | '*/*', context?: HttpContext}): Observable<object>;
+    public deleteEntreprise(idEntreprises: number, observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json' | '*/*', context?: HttpContext}): Observable<HttpResponse<object>>;
+    public deleteEntreprise(idEntreprises: number, observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json' | '*/*', context?: HttpContext}): Observable<HttpEvent<object>>;
+    public deleteEntreprise(idEntreprises: number, observe: any = 'body', reportProgress: boolean = false, options?: {httpHeaderAccept?: 'application/json' | '*/*', context?: HttpContext}): Observable<any> {
         if (idEntreprises === null || idEntreprises === undefined) {
             throw new Error('Required parameter idEntreprises was null or undefined when calling deleteEntreprise.');
         }
@@ -119,6 +121,7 @@ export class EntrepriseApiService {
         if (localVarHttpHeaderAcceptSelected === undefined) {
             // to determine the Accept header
             const httpHeaderAccepts: string[] = [
+                'application/json',
                 '*/*'
             ];
             localVarHttpHeaderAcceptSelected = this.configuration.selectHeaderAccept(httpHeaderAccepts);
@@ -145,7 +148,7 @@ export class EntrepriseApiService {
         }
 
         let localVarPath = `/gestiondestock/v1/entreprises/delete/${this.configuration.encodeParam({name: "idEntreprises", value: idEntreprises, in: "path", style: "simple", explode: false, dataType: "number", dataFormat: "int32"})}`;
-        return this.httpClient.request<any>('delete', `${this.configuration.basePath}${localVarPath}`,
+        return this.httpClient.request<object>('delete', `${this.configuration.basePath}${localVarPath}`,
             {
                 context: localVarHttpContext,
                 responseType: <any>responseType_,

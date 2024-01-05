@@ -16,7 +16,7 @@ import { FournisseurDto } from './fournisseurDto';
 export interface CommandeFournisseurDto { 
     id?: number;
     code: string;
-    dateCommande: string;
+    dateCommande?: string;
     etatCommade: CommandeFournisseurDto.EtatCommadeEnum;
     fournisseur?: FournisseurDto;
     ligneCommandeFournisseurs?: Array<LigneCommandeFournisseurDto>;

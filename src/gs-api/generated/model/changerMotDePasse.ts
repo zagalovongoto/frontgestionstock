@@ -11,7 +11,9 @@
  */
 
 
-export interface SavePhotoRequest { 
-    file: Blob;
+export interface ChangerMotDePasse { 
+    ancien: string;
+    nouveau: string;
+    confirmation: string;
 }
 

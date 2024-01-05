@@ -19,6 +19,8 @@ import { CustomHttpParameterCodec }                          from '../encoder';
 import { Observable }                                        from 'rxjs';
 
 // @ts-ignore
+import { ErrorDto } from '../model/errorDto';
+// @ts-ignore
 import { SaveVente400Response } from '../model/saveVente400Response';
 
 // @ts-ignore

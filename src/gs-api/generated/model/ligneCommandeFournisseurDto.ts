@@ -17,8 +17,8 @@ export interface LigneCommandeFournisseurDto {
     id?: number;
     article?: ArticleDto;
     commandeFournisseur?: CommandeFournisseurDto;
-    quantite?: number;
-    prixUnitaire?: number;
+    quantite: number;
+    prixUnitaire: number;
     idEntreprise?: number;
 }
 

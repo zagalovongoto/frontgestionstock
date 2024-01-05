@@ -9,18 +9,9 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import { CategoryDto } from './categoryDto';
 
 
-export interface ArticleDto { 
-    id?: number;
-    codeArticle: string;
-    designation: string;
-    prixUnitaireHt: number;
-    tauxTva: number;
-    prixUnitaireTtc: number;
-    photoUrl?: string;
-    idEntreprise?: number;
-    category: CategoryDto;
+export interface MessageResponse { 
+    message?: string;
 }
 

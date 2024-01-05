@@ -16,7 +16,7 @@ import { LigneCommandeClientDto } from './ligneCommandeClientDto';
 export interface CommandeClientDto { 
     id?: number;
     code: string;
-    date: string;
+    date?: string;
     etatCommade: CommandeClientDto.EtatCommadeEnum;
     client: ClientDto;
     ligneCommandeClients?: Array<LigneCommandeClientDto>;

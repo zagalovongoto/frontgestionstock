@@ -23,6 +23,7 @@ index.ts
 model/adresseDto.ts
 model/articleDto.ts
 model/categoryDto.ts
+model/changerMotDePasse.ts
 model/clientDto.ts
 model/commandeClientDto.ts
 model/commandeFournisseurDto.ts
@@ -34,9 +35,9 @@ model/ligneCommandeFournisseurDto.ts
 model/ligneVenteDto.ts
 model/loginRequest.ts
 model/loginResponse.ts
+model/messageResponse.ts
 model/models.ts
 model/mvtStkDto.ts
-model/savePhotoRequest.ts
 model/saveVente400Response.ts
 model/utilisateurDto.ts
 model/ventesDto.ts
